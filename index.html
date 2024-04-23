@@ -25,50 +25,45 @@
         }
         .container {
             display: flex;
-            flex-direction: row;
-            height: calc(100vh - 60px);
+            flex-direction: column;
+            height: 100vh;
             overflow: hidden;
             position: relative;
             background-color: #121212; /* Fundo mais escuro da página */
         }
+        #video-section {
+            width: 100%;
+            height: 50vh;
+            background-color: rgba(0, 0, 0, 0.8); /* Fundo mais escuro do vídeo */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #video-section video {
+            width: 80%;
+            max-height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
         #slides-section {
-            flex: 1;
-            overflow: hidden;
-            position: relative;
-            white-space: nowrap;
+            width: 100%;
+            height: 50vh;
+            margin-top: 20px; /* Margem superior para criar espaço entre o vídeo e os slides */
+            overflow-y: auto;
             background-color: #121212; /* Fundo mais escuro da página */
         }
         .slide {
-            width: 70vw;
-            height: 80vh;
-            display: inline-block;
+            width: 100%;
+            height: auto;
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-            margin-right: 20px;
+            margin-bottom: 10px;
         }
         .slide img {
             width: 100%;
-            height: 100%;
+            height: auto;
             object-fit: cover;
-        }
-        #video-section {
-            width: 30%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background-color: rgba(0, 0, 0, 0.8); /* Fundo mais escuro do vídeo */
-            margin-top: 80px; /* Adicionando uma margem superior */
-        }
-        
-        
-        #video-section video {
-            width: 80%;
-            max-height: 50%;
-            object-fit: cover;
-            border-radius: 10px;
         }
         .arrow {
             position: absolute;
@@ -115,15 +110,13 @@
                 flex-direction: row;
             }
             #slides-section {
-                flex: 1;
-                padding: 0;
-            }
-            #video-section {
-                width: 30%;
-                padding: 0;
+                height: calc(100vh - 100px);
+                overflow-y: auto;
             }
             .slide {
-                margin-bottom: 0;
+                width: 45%;
+                height: auto;
+                margin: 10px;
             }
             .arrow-left {
                 left: 20px;
@@ -139,16 +132,11 @@
                 height: 70px;
             }
         }
-        .slide img {
-            max-width: 100%;
-            height: auto;
-            object-fit: cover;
-        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Entre em contato com o Corretor Obede</h1>
+        <h1>Corretor Obede</h1>
         <p>CRECI:  267559</p>
         <div class="social">
             <a href="https://www.instagram.com/correadearaujomarcos?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><button><i class="fab fa-instagram"></i></button></a>
@@ -310,10 +298,11 @@
                     
             <!-- Adicione mais slides conforme necessário -->
         </section>
-        <!-- Adiciona as setas de rolagem -->
-        <label class="arrow arrow-left" id="arrow-left">&#10094;</label>
-        <label class="arrow arrow-right" id="arrow-right">&#10095;</label>
     </div>
+    <!-- Adiciona as setas de rolagem -->
+    <label class="arrow arrow-left" id="arrow-left">&#10094;</label>
+    <label class="arrow arrow-right" id="arrow-right">&#10095;</label>
+
     <script>
         // Seletor de slide atual
         let currentSlide = 0;
