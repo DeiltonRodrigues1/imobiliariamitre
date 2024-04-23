@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+
+    <title>HAUS MITRE EDITION | NY</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+            background-color: #121212; /* Fundo mais escuro da página */
+        }
+        header {
+            width: 100%;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            height: calc(100vh - 60px);
+            overflow: hidden;
+            position: relative;
+            background-color: #121212; /* Fundo mais escuro da página */
+        }
+        #slides-section {
+            flex: 1;
+            overflow: hidden;
+            position: relative;
+            white-space: nowrap;
+            background-color: #121212; /* Fundo mais escuro da página */
+        }
+        .slide {
+            width: 70vw;
+            height: 80vh;
+            display: inline-block;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            margin-right: 20px;
+        }
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        #video-section {
+            width: 30%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.8); /* Fundo mais escuro do vídeo */
+            margin-top: 80px; /* Adicionando uma margem superior */
+        }
+        
+        
+        #video-section video {
+            width: 80%;
+            max-height: 50%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 40px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            z-index: 999;
+            border-radius: 50%;
+            transition: opacity 0.3s ease;
+        }
+        .arrow-left {
+            left: 20px;
+        }
+        .arrow-right {
+            right: 20px;
+        }
+        .arrow:hover {
+            opacity: 0.8;
+        }
+        .social button {
+            border: none; /* Remover borda */
+            margin-left: 10px; /* Espaçamento entre os botões de mídia social */
+            cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+            width: 70px !important;
+            height: 70px !important;
+            border-radius: 50%; /* Arredonda o botão */
+        }
+        .social button:hover {
+            color: #1f66ad; /* Cor do ícone ao passar o mouse */
+        }
+        .social button i {
+            font-size: 20px; /* Tamanho do ícone */
+        }
+        /* Media queries para tornar o design responsivo */
+        @media screen and (min-width: 768px) {
+            .container {
+                flex-direction: row;
+            }
+            #slides-section {
+                flex: 1;
+                padding: 0;
+            }
+            #video-section {
+                width: 30%;
+                padding: 0;
+            }
+            .slide {
+                margin-bottom: 0;
+            }
+            .arrow-left {
+                left: 20px;
+            }
+            .arrow-right {
+                right: 20px;
+            }
+            .social {
+                margin: 0;
+            }
+            .social button {
+                width: 70px;
+                height: 70px;
+            }
+        }
+        .slide img {
+            max-width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Corretor Obede</h1>
+        <p>CRECI:  267559</p>
+        <div class="social">
+            <a href="https://www.instagram.com/correadearaujomarcos?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><button><i class="fab fa-instagram"></i></button></a>
+            <a href="https://www.facebook.com/marcos.correadearaujo.3?mibextid=ZbWKwL" target="_blank"><button><i class="fab fa-facebook-f"></i></button></a>
+            <a href="https://api.whatsapp.com/send?phone=5511999726507" target="_blank"><button><i class="fab fa-whatsapp"></i></button></a>
+        </div>
+    </header>
+    <div class="container">
+        <section id="video-section">
+            <video controls autoplay>
+                <source src="apresentacao.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+        </section>
+        <section id="slides-section">
+            <!-- Coloque o caminho completo das imagens -->
+            <!-- Continue adicionando as imagens para os slides restantes -->
+            <div class="slide">
+                <img src="imgPdf/Apresentação produto Soho (1).jpg" alt="Imagem 1">
+            </div>
+            <div class="slide">
+                <img src="imgPdf/Apresentação produto Soho (2).jpg" alt="Imagem 2">
+            </div>
+            <div class="slide">
+                <img src="imgPdf/Apresentação produto Soho (3).jpg" alt="Imagem 3">
+            </div>
+            <div class="slide">
+                <img src="imgPdf/Apresentação produto Soho (4).jpg" alt="Imagem 4">
+            </div>
+            <div class="slide">
+                <img src="imgPdf/Apresentação produto Soho (5).jpg" alt="Imagem 5">
+            </div>
+            <div class="slide">
+                <img src="imgPdf/Apresentação produto Soho (6).jpg" alt="Imagem 6">
+            </div>
+            <div class="slide">
+                <img src="imgPdf/Apresentação produto Soho (7).jpg" alt="Imagem 7">
+            </div>
+            <div class="slide">
+                <img src="imgPdf/Apresentação produto Soho (8).jpg" alt="Imagem 8">
+            </div>
+            <div class="slide">
+                <img src="imgPdf/Apresentação produto Soho (9).jpg" alt="Imagem 9">
+            </div>
+            <div class="slide">
+                <img src="imgPdf/Apresentação produto Soho (10).jpg" alt="Imagem 10">
+            </div>
+            <div class="slide">
+                <img src="imgPdf/Apresentação produto Soho (11).jpg" alt="Imagem 11">
+            </div>
+            <div class="slide">
+                <img src="imgPdf/Apresentação produto Soho (12).jpg" alt="Imagem 12">
+            </div>
+            <div class="slide">
+                <img src="imgPdf/Apresentação produto Soho (13).jpg" alt="Imagem 13">
+            </div>
+            <div class="slide">
+                <img src="imgPdf/Apresentação produto Soho (14).jpg" alt="Imagem 14">
+            </div>
+            <div class="slide">
+                <img src="imgPdf/Apresentação produto Soho (15).jpg" alt="Imagem 15">
+            </div>
+            <div class="slide">
+                <img src="imgPdf/Apresentação produto Soho (16).jpg" alt="Imagem 16">
+            </div>
+            <div class="slide">
+                <img src="imgPdf/Apresentação produto Soho (17).jpg" alt="Imagem 17">
+            </div>
+            <div class="slide">
+                <img src="imgPdf/Apresentação produto Soho (18).jpg" alt="Imagem 18">
+            </div>
+            <div class="slide">
+                <img src="imgPdf/Apresentação produto Soho (19).jpg" alt="Imagem 19">
+            </div>
+            <div class="slide">
+                <img src="imgPdf/Apresentação produto Soho (20).jpg" alt="Imagem 20">
+            </div>
+            <div class="slide">
+                <img src="imgPdf/Apresentação produto Soho (21).jpg" alt="Imagem 21">
+            </div>
+            <div class="slide">
+                <img src="imgPdf/Apresentação produto Soho (22).jpg" alt="Imagem 22">
+            </div>
+            <div class="slide">
+                <img src="imgPdf/Apresentação produto Soho (23).jpg" alt="Imagem 23">
+            </div>
+            <div class="slide">
+                <img src="imgPdf/Apresentação produto Soho (24).jpg" alt="Imagem 24">
+            </div>
+            <div class="slide">
+                <img src="imgPdf/Apresentação produto Soho (25).jpg" alt="Imagem 25">
+            </div>
+            <div class="slide">
+                <img src="imgPdf/Apresentação produto Soho (26).jpg" alt="Imagem 26">
+            </div>
+            <div class="slide">
+                <img src="imgPdf/Apresentação produto Soho (27).jpg" alt="Imagem 27">
+            </div>
+            <div class="slide">
+                <img src="imgPdf/Apresentação produto Soho (28).jpg" alt="Imagem 28">
+            </div>
+            <div class="slide">
+                <img src="imgPdf/Apresentação produto Soho (29).jpg" alt="Imagem 29">
+            </div>
+            <div class="slide">
+                <img src="imgPdf/Apresentação produto Soho (30).jpg" alt="Imagem 30">
+            </div>
+            <div class="slide">
+                <img src="imgPdf/Apresentação produto Soho (31).jpg" alt="Imagem 31">
+            </div>
+            <div class="slide">
+                <img src="imgPdf/Apresentação produto Soho (32).jpg" alt="Imagem 32">
+            </div>
+            <div class="slide">
+                <img src="imgPdf/Apresentação produto Soho (33).jpg" alt="Imagem 33">
+            </div>
+            <div class="slide">
+                <img src="imgPdf/Apresentação produto Soho (34).jpg" alt="Imagem 34">
+            </div>
+            <div class="slide">
+                <img src="imgPdf/Apresentação produto Soho (35).jpg" alt="Imagem 35">
+            </div>
+            <div class="slide">
+                <img src="imgPdf/Apresentação produto Soho (36).jpg" alt="Imagem 36">
+            </div>
+            <div class="slide">
+                <img src="imgPdf/Apresentação produto Soho (37).jpg" alt="Imagem 37">
+            </div>
+            <div class="slide">
+                <img src="imgPdf/Apresentação produto Soho (38).jpg" alt="Imagem 38">
+            </div>
+            <div class="slide">
+                <img src="imgPdf/Apresentação produto Soho (39).jpg" alt="Imagem 39">
+            </div>
+            <div class="slide">
+                <img src="imgPdf/Apresentação produto Soho (40).jpg" alt="Imagem 40">
+                </div>
+                <div class="slide">
+                    <img src="imgPdf/Apresentação produto Soho (41).jpg" alt="Imagem 41">
+                </div>
+                <div class="slide">
+                    <img src="imgPdf/Apresentação produto Soho (42).jpg" alt="Imagem 42">
+                </div>
+                <div class="slide">
+                    <img src="imgPdf/Apresentação produto Soho (43).jpg" alt="Imagem 43">
+                </div>
+                <div class="slide">
+                    <img src="imgPdf/Apresentação produto Soho (44).jpg" alt="Imagem 44">
+                </div>
+                <div class="slide">
+                    <img src="imgPdf/Apresentação produto Soho (45).jpg" alt="Imagem 45">
+                </div>
+                <div class="slide">
+                    <img src="imgPdf/Apresentação produto Soho (46).jpg" alt="Imagem 46">
+                    </div>
+                    <div class="slide">
+                        <img src="imgPdf/Apresentação produto Soho (47).jpg" alt="Imagem 47">
+                        </div>
+                    
+            <!-- Adicione mais slides conforme necessário -->
+        </section>
+        <!-- Adiciona as setas de rolagem -->
+        <label class="arrow arrow-left" id="arrow-left">&#10094;</label>
+        <label class="arrow arrow-right" id="arrow-right">&#10095;</label>
+    </div>
+    <script>
+        // Seletor de slide atual
+        let currentSlide = 0;
+
+        // Total de slides
+        const slides = document.querySelectorAll('.slide');
+
+        // Botões de seta
+        const prevArrow = document.getElementById('arrow-left');
+        const nextArrow = document.getElementById('arrow-right');
+
+        // Função para mostrar o slide atual
+        const showSlide = (index) => {
+            // Oculta todos os slides
+            slides.forEach((slide) => {
+                slide.style.display = 'none';
+            });
+
+            // Mostra o slide atual
+            slides[index].style.display = 'block';
+        };
+
+        // Inicializa mostrando o primeiro slide
+        showSlide(currentSlide);
+
+        // Função para avançar para o próximo slide
+        const nextSlide = () => {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        };
+
+        // Função para voltar para o slide anterior
+        const prevSlide = () => {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+        };
+
+        // Adiciona eventos de clique aos botões de seta
+        prevArrow.addEventListener('click', prevSlide);
+        nextArrow.addEventListener('click', nextSlide);
+    </script>
+</body>
+</html>
